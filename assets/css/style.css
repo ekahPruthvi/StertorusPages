@@ -137,6 +137,7 @@ a{
 
 .foot{
   position: fixed;
+  font-size: 0.9vw;
   bottom:0;
   width: 100% auto;
   text-align: center;
