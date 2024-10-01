@@ -8,12 +8,12 @@
     src:url("../assets/fonts/GothicPixels.ttf") format("truetype");
 }
 @font-face {
-  font-family: Airen;
-    src:url("../assets/fonts/Airen-Regular.otf") format("woff2"),
-    src:url("../assets/fonts/Airen-Regular.otf") format("embedded-opentype"),
-    src:url("../assets/fonts/Airen-Regular.otf") format("woff"),
-    src:url("../assets/fonts/Airen-Regular.otf") format("svg"),
-    src:url("../assets/fonts/Airen-Regular.otf") format("truetype");
+  font-family: SpaceMono-Bold;
+    src:url("../assets/fonts/SpaceMono-Bold.ttf") format("woff2"),
+    src:url("../assets/fonts/SpaceMono-Bold.ttf") format("embedded-opentype"),
+    src:url("../assets/fonts/SpaceMono-Bold.ttf") format("woff"),
+    src:url("../assets/fonts/SpaceMono-Bold.ttf") format("svg"),
+    src:url("../assets/fonts/SpaceMono-Bold.ttf") format("truetype");
 }
 
 .circle {
@@ -65,7 +65,7 @@ a{
 
 .imgg{
   display: block;
-  width: 20vw;
+  width: 15vw;
   margin-left: auto;
   margin-right: auto;
   width: 80% auto;
@@ -75,18 +75,18 @@ a{
 }
 
 .main{
-  font-family: Airen;
+  font-family: SpaceMono-Bold;
   min-height: 25vw;
-  font-size: 3.5vw;
+  font-size: 1vw;
   color: white;
   display: block;
-  width: 95%;
+  width: 85%;
   margin: auto;
   background-color: rgb(21, 21, 29);
   outline-style: solid;
   border-style: none none solid none;
   border-width: 10px;
-  padding: 1%;
+  padding: 2%;
   border-radius: 0px;
 }
 
