@@ -99,6 +99,19 @@ body {
 
 }
 
+.box{
+  color: white;
+  padding: 20px;
+  background: #000000;
+  border: 2px solid #464646;
+  box-shadow: 8px 8px 0 #61616149;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover{
+  transform: translate(-5px, -5px);
+  box-shadow: 17px 17px 0 #141414;
+}
 
 .link{
   font-family: "GothicPixels";
