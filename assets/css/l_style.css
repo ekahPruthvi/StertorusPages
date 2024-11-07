@@ -17,6 +17,12 @@
     src:url("../fonts/SpaceMono-Bold.ttf") format("truetype");
 }
 
+.bobbm {
+  position: absolute;
+  color: #ffffff00;
+}
+
+
 .circle {
   position: fixed;
   top: 50%;
@@ -326,7 +332,7 @@ a{
   pointer-events: none;
 }
 
-.headd{ 
+.bob{ 
   position: sticky;
   grid-area: header;
   text-align: center;
