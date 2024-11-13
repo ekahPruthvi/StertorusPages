@@ -18,7 +18,10 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fill,minmax(30vw,1fr));
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(25vw,1fr);
+  overflow-x: auto;
   padding: 5vw;
   background-color: #18C499;
 }
@@ -254,18 +257,29 @@ body {
 }
 
 
-.box{
-  color: white;
-  padding: 20px;
-  background: #000000;
-  border: 2px solid #464646;
-  box-shadow: 8px 8px 0 #61616149;
-  transition: transform 0.3s, box-shadow 0.3s;
+.box {
+  outline: 0;
+  display: inline-flex;
+  align-items: end;
+  justify-content: space-between;
+  background: #40B3A2;
+  min-width: 200px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.box:hover{
-  transform: translate(-5px, -5px);
-  box-shadow: 17px 17px 0 #141414;
+.box:hover {
+  opacity: .95;
 }
 
 .link{
