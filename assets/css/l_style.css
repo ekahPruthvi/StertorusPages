@@ -1,3 +1,7 @@
+@view-transition {
+  navigation: auto;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @font-face {
@@ -15,6 +19,24 @@
     src:url("../fonts/SpaceMono-Bold.ttf") format("woff"),
     src:url("../fonts/SpaceMono-Bold.ttf") format("svg"),
     src:url("../fonts/SpaceMono-Bold.ttf") format("truetype");
+}
+
+@keyframes move-in {
+  from {
+      transform: translateY(100%);
+  }
+
+  to {
+      transform: translateY(0%);
+  }
+}
+
+::view-transition-old(root) {
+  animation: 0.8s cubic-bezier(0.87, 0, 0.13, 1) both move-out;
+}
+
+::view-transition-new(root) {
+  animation: 0.8s cubic-bezier(0.87, 0, 0.13, 1) both move-in;
 }
 
 .bobbm {
@@ -253,63 +275,6 @@ a{
 }
 
 
-.imgg{
-  max-height: 50%;
-  grid-area: boxx;
-  background-color: rgb(99, 99, 136);
-  width:auto;
-  border-width: 0px;
-  padding: 0px;
-  margin: 0px;
-  border-radius: 0px;
-  height: 16rem;
-  background: transparent;
-}
-
-.button {
-  --main-color: #9c9cd3;
-  --main-bg-color: #a0a0fd;
-  --pattern-color: rgba(83, 36, 255, 0.073);
-
-  
-  filter: hue-rotate(0deg);
-  letter-spacing: 0.5rem;
-  background: radial-gradient(
-      circle,
-      var(--main-bg-color) 0%,
-      rgba(0, 0, 0, 0) 95%
-    ),
-    linear-gradient(var(--pattern-color) 1px, transparent 1px),
-    linear-gradient(to right, var(--pattern-color) 1px, transparent 1px);
-  background-size:
-    cover,
-    15px 15px,
-    15px 15px;
-  background-position:
-    center center,
-    center center,
-    center center;
-  border-image: radial-gradient(
-      circle,
-      var(--main-color) 0%,
-      rgba(0, 0, 0, 0) 100%
-    )
-    1;
-  border-width: 1px 0 1px 0;
-  color: var(--main-color);
-  padding: 1rem 3rem;
-  font-weight: 700;
-  font-size: 1.5rem;
-  transition: background-size 0.2s ease-in-out;
-}
-
-.button:hover {
-  background-size:
-    cover,
-    10px 10px,
-    10px 10px;
-}
-
 .main{
   grid-area: main;
   background-color: rgb(99, 99, 136);
@@ -346,11 +311,11 @@ a{
 }
 
 .foot{
-  font-size: 0.9vw;
+  font-size: 0.7vw;
   bottom:0;
   width: 100% auto;
   text-align: center;
-  margin:10px;
+  margin:100px;
   padding:20px;
 }
 
