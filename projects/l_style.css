@@ -49,6 +49,14 @@
   border: 6px solid #464646;
   box-shadow: 12px 12px 0 #1b1b1b;
   transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -258,9 +266,10 @@ body {
 
 
 .box {
+  margin-top: auto;
   outline: 0;
   display: inline-flex;
-  align-items: end;
+  align-self: flex-start;
   justify-content: space-between;
   background: #40B3A2;
   min-width: 200px;
@@ -380,7 +389,6 @@ a{
 section
 {
 	border-radius
-  
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
