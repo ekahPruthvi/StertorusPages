@@ -289,8 +289,8 @@ a{
 .folder-tabs {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
-  background: #32332e;
+  /* align-items: stretch; */
+  background: #32332e00;
   min-width: 72px;
   z-index: 2;
 }
@@ -298,8 +298,68 @@ a{
 .folder-tab {
   writing-mode: vertical-lr;
   text-orientation: mixed;
+  background-color: white;
+  /* border-style: solid; */
+  height: 20vh;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-top: 10px;
+  /* border-color: #686c75; */
+  box-shadow: 
+    rgba(0, 0, 0, 0.25) 24px 0px 55px,
+    rgba(0, 0, 0, 0.12) 12px 0px 30px,
+    rgba(0, 0, 0, 0.12) 8px 0px 6px,
+    rgba(0, 0, 0, 0.17) 16px 0px 13px,
+    rgba(0, 0, 0, 0.09) 4px 0px 5px;
+  margin-top: 10vh;
+  z-index: 100;
+}
+
+.folder-tab-body{
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  background-color: white;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 19px,
+      rgba(75, 85, 99, 0.08) 19px,
+      rgba(75, 85, 99, 0.08) 20px,
+      transparent 20px,
+      transparent 39px,
+      rgba(75, 85, 99, 0.08) 39px,
+      rgba(75, 85, 99, 0.08) 40px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 19px,
+      rgba(75, 85, 99, 0.08) 19px,
+      rgba(75, 85, 99, 0.08) 20px,
+      transparent 20px,
+      transparent 39px,
+      rgba(75, 85, 99, 0.08) 39px,
+      rgba(75, 85, 99, 0.08) 40px
+    ),
+    radial-gradient(
+      circle at 20px 20px,
+      rgba(55, 65, 81, 0.12) 2px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 40px 40px,
+      rgba(55, 65, 81, 0.12) 2px,
+      transparent 2px
+    );
+  background-size:
+    40px 40px,
+    40px 40px,
+    40px 40px,
+    40px 40px;
   color: #222;
-  min-width: 90px;
+  min-width: 10px;
   padding: 24px 7px;
   min-height: 70vh;
   font-weight: bold;
@@ -307,6 +367,13 @@ a{
   font-size: 18px;
   cursor: pointer;
   transition: background 0.18s, color 0.18s;
+  box-shadow: 
+    rgba(0, 0, 0, 0.25) 24px 0px 55px,
+    rgba(0, 0, 0, 0.12) 12px 0px 30px,
+    rgba(0, 0, 0, 0.12) 8px 0px 6px,
+    rgba(0, 0, 0, 0.17) 16px 0px 13px,
+    rgba(0, 0, 0, 0.09) 4px 0px 5px;
+  min-width: 90px;
 }
 
 .folder-tab.active,
