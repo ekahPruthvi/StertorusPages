@@ -381,6 +381,10 @@ a{
   text-decoration: none;
 }
 
+.icons:hover{
+  color: black;
+}
+
 .footer{
   position:relative;
   bottom: 0;
