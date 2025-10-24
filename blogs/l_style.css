@@ -301,10 +301,11 @@ a{
   background-color: white;
   /* border-style: solid; */
   height: 20vh;
+  width: 40px;
+  margin-left: -5px;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
   padding-top: 10px;
-  /* border-color: #686c75; */
   box-shadow: 
     rgba(0, 0, 0, 0.25) 24px 0px 55px,
     rgba(0, 0, 0, 0.12) 12px 0px 30px,
@@ -321,6 +322,7 @@ a{
   background-color: white;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
+  margin-left: -42px;
   background-image: repeating-linear-gradient(
       0deg,
       transparent,
@@ -386,7 +388,6 @@ a{
   width: 200px;
 }
 
-/* Folder content styling */
 .folder-content-container {
   flex: 1;
   position: relative;
@@ -405,7 +406,7 @@ a{
   );
   background-size: 1em 1em;
   background-repeat: space;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgb(156, 113, 31) 3px 3px 6px 0px inset, rgb(95, 67, 16) -3px -3px 6px 1px inset;
 }
 
 .folder-content {
@@ -418,7 +419,7 @@ a{
   height: 70vh;
   background: rgb(250, 250, 240);
   box-shadow: 4px 0 44px 0 rgba(44,44,44,0.06);
-  border-radius: 15px;
+  border-radius: 2px;
   margin: 20px 20px 0px 20px;
   z-index: 1;
   animation: folder-expand 0.5s cubic-bezier(.44,.58,.58,1.17);
