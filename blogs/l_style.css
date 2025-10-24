@@ -1,39 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
 @font-face {
     font-family: GothicPixels;
-    src:url("../assets/fonts/GothicPixels.ttf") format("woff2"),
-    src:url("../assets/fonts/GothicPixels.ttf") format("embedded-opentype"),
-    src:url("../assets/fonts/GothicPixels.ttf") format("woff"),
-    src:url("../assets/fonts/GothicPixels.ttf") format("svg"),
-    src:url("../assets/fonts/GothicPixels.ttf") format("truetype");
+    src:url("../assets/fonts/GothicPixels.ttf") format("woff2");
 }
 @font-face {
   font-family: SpaceMono-Bold;
-    src:url("../assets/fonts/SpaceMono-Bold.ttf") format("woff2"),
-    src:url("../assets/fonts/SpaceMono-Bold.ttf") format("embedded-opentype"),
-    src:url("../assets/fonts/SpaceMono-Bold.ttf") format("woff"),
-    src:url("../assets/fonts/SpaceMono-Bold.ttf") format("svg"),
-    src:url("../assets/fonts/SpaceMono-Bold.ttf") format("truetype");
-}
-
-.circle {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
-  mix-blend-mode: difference;
-  background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
-  border-radius: 50%;
-  pointer-events: none;
-  transition: ease-out 0.17s;
+    src:url("../assets/fonts/SpaceMono-Bold.ttf") format("woff2");
 }
 
 
 body {
   background-color: rgb(0, 0, 0);
-  cursor: none;
   height: 16rem;
   background-image: radial-gradient(circle, rgb(36, 45, 56) 2px, rgb(0, 0, 0) 2px);
   background-size: 2.5rem 2.5rem;
@@ -299,9 +278,8 @@ a{
   writing-mode: vertical-lr;
   text-orientation: mixed;
   background-color: white;
-  /* border-style: solid; */
-  height: 20vh;
-  width: 40px;
+  height: 30vh;
+  width: 45px;
   margin-left: -5px;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
@@ -314,52 +292,46 @@ a{
     rgba(0, 0, 0, 0.09) 4px 0px 5px;
   margin-top: 10vh;
   z-index: 100;
+  /* box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.274); */
+}
+
+.cynfolder{
+  z-index: 99998;
+  background-color: brown;
+}
+
+.cyntab{
+  font-family: "Bungee Shade", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.7em;
+  z-index: 99999;
+  background-color: brown;
+  color: rgb(78, 13, 13);
+}
+
+.basfolder{
+  z-index: 99998;
+  background-color: rgb(100, 15, 15);
+}
+
+.bastab{
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7em;
+  z-index: 99999;
+  background-color: rgb(100, 15, 15);
+  color: rgb(201, 37, 37);
 }
 
 .folder-tab-body{
   writing-mode: vertical-lr;
   text-orientation: mixed;
-  background-color: white;
+  /* background-color: white; */
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
   margin-left: -42px;
-  background-image: repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 19px,
-      rgba(75, 85, 99, 0.08) 19px,
-      rgba(75, 85, 99, 0.08) 20px,
-      transparent 20px,
-      transparent 39px,
-      rgba(75, 85, 99, 0.08) 39px,
-      rgba(75, 85, 99, 0.08) 40px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 19px,
-      rgba(75, 85, 99, 0.08) 19px,
-      rgba(75, 85, 99, 0.08) 20px,
-      transparent 20px,
-      transparent 39px,
-      rgba(75, 85, 99, 0.08) 39px,
-      rgba(75, 85, 99, 0.08) 40px
-    ),
-    radial-gradient(
-      circle at 20px 20px,
-      rgba(55, 65, 81, 0.12) 2px,
-      transparent 2px
-    ),
-    radial-gradient(
-      circle at 40px 40px,
-      rgba(55, 65, 81, 0.12) 2px,
-      transparent 2px
-    );
-  background-size:
-    40px 40px,
-    40px 40px,
-    40px 40px,
-    40px 40px;
   color: #222;
   min-width: 10px;
   padding: 24px 7px;
@@ -370,22 +342,23 @@ a{
   cursor: pointer;
   transition: background 0.18s, color 0.18s;
   box-shadow: 
-    rgba(0, 0, 0, 0.25) 24px 0px 55px,
+    rgba(0, 0, 0, 0.568) 24px 0px 55px,
     rgba(0, 0, 0, 0.12) 12px 0px 30px,
     rgba(0, 0, 0, 0.12) 8px 0px 6px,
     rgba(0, 0, 0, 0.17) 16px 0px 13px,
     rgba(0, 0, 0, 0.09) 4px 0px 5px;
   min-width: 90px;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.274);
 }
 
 .folder-tab.active,
 .folder-tab:hover {
-  background: #686c75;
-  color: #f4ebdb;
+  box-shadow: none; 
 }
 
 .folder-tab-body.active{
   width: 200px;
+  box-shadow: none;
 }
 
 .folder-content-container {
