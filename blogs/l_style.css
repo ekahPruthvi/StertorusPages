@@ -290,7 +290,7 @@ a{
 
 .cynfolder{
   z-index: 99998;
-  background-color: brown;
+  background-color: #938E7C;
 }
 
 .cyntab{
@@ -299,8 +299,8 @@ a{
   font-style: normal;
   font-size: 1.7em;
   z-index: 99999;
-  background-color: brown;
-  color: rgb(78, 13, 13);
+  background-color: #938E7C;
+  color: #535148;
 }
 
 .basfolder{
