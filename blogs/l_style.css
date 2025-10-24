@@ -382,11 +382,26 @@ a{
   color: #f4ebdb;
 }
 
+.folder-tab-body.active{
+  width: 200px;
+}
+
 /* Folder content styling */
 .folder-content-container {
   flex: 1;
   position: relative;
   overflow: visible;
+  background-color: rgb(97, 69, 17);
+  margin-left: 10px;
+  border-radius: 18px 0px 0px 18px;
+  filter: url(#void-texture);
+  background: linear-gradient(
+    to bottom,
+    rgba(194, 167, 87, 0.241) 0%,
+    rgba(162, 125, 55, 0.255) 100%
+  );
+
+  background-size: cover;
 }
 
 .folder-content {
@@ -394,20 +409,36 @@ a{
   position: absolute;
   top: 0;
   left: 0;
-  width: 470px;
-  max-width: 85vw;
-  height: 350px;
-  background: #eee;
+  right: 0;
+  width: auto;
+  height: 70vh;
+  background: rgb(250, 250, 240);
   box-shadow: 4px 0 44px 0 rgba(44,44,44,0.06);
-  border-radius: 0 16px 16px 0;
-  border-left: 4px solid #313133;
+  border-radius: 15px;
+  margin: 20px 20px 0px 20px;
   z-index: 1;
-  animation: folder-expand 0.28s cubic-bezier(.44,.58,.58,1.17);
+  animation: folder-expand 0.5s cubic-bezier(.44,.58,.58,1.17);
+  padding-left: 50px;
+  background-image: linear-gradient(
+      90deg,
+      transparent 50px,
+      #ffb4b8 50px,
+      #ffb4b8 52px,
+      transparent 52px
+    ),
+    linear-gradient(#e1e1e1 0.1em, transparent 0.1em);
+  background-size: 100% 20px;
+  box-shadow: 
+    rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 @keyframes folder-expand {
   from { width: 0; opacity: 0; }
-  to   { width: 470px; opacity: 1; }
+  to   { width: 80%; opacity: 1; }
 }
 
 .folder-content.active {
