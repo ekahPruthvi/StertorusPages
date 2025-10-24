@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 @font-face {
     font-family: GothicPixels;
     src:url("../assets/fonts/GothicPixels.ttf") format("woff2");
@@ -277,22 +278,14 @@ a{
 .folder-tab {
   writing-mode: vertical-lr;
   text-orientation: mixed;
-  background-color: white;
   height: 30vh;
   width: 45px;
   margin-left: -5px;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
   padding-top: 10px;
-  box-shadow: 
-    rgba(0, 0, 0, 0.25) 24px 0px 55px,
-    rgba(0, 0, 0, 0.12) 12px 0px 30px,
-    rgba(0, 0, 0, 0.12) 8px 0px 6px,
-    rgba(0, 0, 0, 0.17) 16px 0px 13px,
-    rgba(0, 0, 0, 0.09) 4px 0px 5px;
   margin-top: 10vh;
-  z-index: 100;
-  /* box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.274); */
+  filter: brightness(0.7);
 }
 
 .cynfolder{
@@ -311,8 +304,8 @@ a{
 }
 
 .basfolder{
-  z-index: 99998;
-  background-color: rgb(100, 15, 15);
+  z-index: 9998;
+  background-color: rgb(143, 45, 45);
 }
 
 .bastab{
@@ -320,9 +313,24 @@ a{
   font-weight: 400;
   font-style: normal;
   font-size: 1.7em;
-  z-index: 99999;
-  background-color: rgb(100, 15, 15);
-  color: rgb(201, 37, 37);
+  z-index: 9999;
+  background-color: rgb(143, 45, 45);
+  color: rgb(80, 31, 31);
+}
+
+.pfolder{
+  z-index: 998;
+  background-color: rgb(15, 59, 100);
+}
+
+.ptab{
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7em;
+  z-index: 999;
+  background-color: rgb(15, 59, 100);
+  color: rgb(43, 110, 173);
 }
 
 .folder-tab-body{
@@ -331,8 +339,7 @@ a{
   /* background-color: white; */
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
-  margin-left: -42px;
-  color: #222;
+  margin-left: -45px;
   min-width: 10px;
   padding: 24px 7px;
   min-height: 70vh;
@@ -348,17 +355,17 @@ a{
     rgba(0, 0, 0, 0.17) 16px 0px 13px,
     rgba(0, 0, 0, 0.09) 4px 0px 5px;
   min-width: 90px;
-  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.274);
+  filter: brightness(0.7);
 }
 
-.folder-tab.active,
-.folder-tab:hover {
-  box-shadow: none; 
+.folder-tab.active{
+  filter: brightness(1);
 }
 
 .folder-tab-body.active{
-  width: 200px;
+  width: 150px;
   box-shadow: none;
+  filter: brightness(1);
 }
 
 .folder-content-container {
