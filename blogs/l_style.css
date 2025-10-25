@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&display=swap');
 @font-face {
     font-family: GothicPixels;
     src:url("../assets/fonts/GothicPixels.ttf") format("woff2");
@@ -433,10 +434,27 @@ a{
 .markdown-scroll {
   overflow-y: auto;
   height: 100%;
-  padding: 28px 24px;
+  padding: 25px;
+  height: 64vh;
   font-family: 'JetBrains Mono', monospace;
   font-size: 16px;
   color: #212117;
+}
+
+.linkk{
+  color: blue;
+  font-family: "Noto Emoji";
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+mark{
+  background-color: #00ff62;
+}
+
+.linkk:hover{
+  font-style: italic;
 }
 
 /* Responsive */

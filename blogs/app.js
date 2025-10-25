@@ -10,14 +10,10 @@ function expandFolder(i) {
 
 expandFolder(0);
 
-function AddAnimatedCircle() {
-  const circle = document.getElementById('circleId');
-  document.addEventListener('mousemove', (e) => {
-    requestAnimationFrame(() => {
-      circle.style.left = `${e.clientX}px`;
-      circle.style.top = `${e.clientY}px`;
-    });
-  });
+function pagemove(i) {
+  document.querySelectorAll('.folder-tab').forEach(e => e.classList.remove('active'));
+  document.querySelectorAll('.folder-tab-body').forEach(e => e.classList.remove('active'));
+  document.querySelectorAll('.folder-content').forEach(e => e.classList.remove('active'));
+  document.getElementById('inner-link-page-' + i).classList.add('active');
 }
 
-AddAnimatedCircle();
