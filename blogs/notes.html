@@ -110,7 +110,7 @@
               <br>
               <h2 id="file-structure">File Structure</h2>
               <pre>
-/  
+/ (root)  
 ├── etc  
 │   └── systemd    → logind.conf (power button config)
 ├── home  
@@ -123,30 +123,52 @@
 |       |   |              → style.css   
 │       │   ├── dunst    → dunstrc  
 │       │   ├── htop    → htoprc  
-│       │   ├── hypr  
-│       │   │   ├── themes  
-│       │   │   ├── sound  
-│       │   │   ├── scripts  
-│       │   ├── kitty  
-│       │   │   → themes  
-│       │   ├── kvantum  
-│       │   │   → cynage  
-│       │   │   → lightage  
+│       │   ├── hypr    → animations.conf
+|       |   |   |       → hyprland.conf
+|       |   |   |       → keybindings.conf
+|       |   |   |       → monitors.conf
+|       |   |   |       → nvidia.conf
+|       |   |   |       → pyprland.toml
+|       |   |   |       → startup.conf
+|       |   |   |       → windowrules.conf 
+│       │   │   ├── themes    → cynage.conf
+|       |   |   |             → lightage.conf
+|       |   |   |             → theme.conf  
+│       │   │   ├── sound
+|       |   |   |   ├── notiv    → notiv.mp3
+|       |   |   |   └── startup    → default.mp3
+|       |   |   |                  → game-menu.mp3
+|       |   |   |                  → game-start.mp3
+|       |   |   |                  → spatial.mp3 
+│       │   │   └── scripts    → batterynotify.sh
+│       │   │                  → blurwall.sh
+│       │   │                  → brightness.py
+│       │   │                  → resetxdgportal.sh
+│       │   │                  → swwwallbash.sh
+│       │   │                  → swwwallpaper.sh
+│       │   ├── kitty    → kitty.conf   
+│       │   │   └── themes    → cynage.conf
+│       │   │                 → lightage.conf
+│       │   │                 → theme.conf 
+│       │   ├── kvantum    → kvantum.kvconfig  
+│       │   │   ├── cynage (see more from cynageOS repo)
+│       │   │   └── lightage (see more from cynageOS repo)  
 │       │   ├── neofetch  
-│       │   │   → gifs  
-│       │   │   → pngs  
+│       │   │   ├── gifs  
+│       │   │   └── pngs  
 │       │   ├── qt5ct  
-│       │   │   → colors  
-│       │   │   → qss  
+│       │   │   ├── colors  
+│       │   │   └── qss  
 │       │   ├── qt6ct  
-│       │   │   → colors  
-│       │   │   → qss  
-│       │   └── swww  
-│       │       → cynage  
+│       │   │   ├── colors  
+│       │   │   └── qss  
+│       │   └── swww    → wall.ctl
+|       |       ├── .cache (cached wallpapers)
+│       │       └── cynage (all wallpapers)
 │       ├── .icons    → cynide  
 │       └── .themes  
-│           → cynage  
-│           → lightage  
+│           ├── cynage  
+│           └── lightage  
 ├── opt  
 │   └── <a href="https://github.com/ekahPruthvi/pickle_berry" target="_blank" class="linkk">PickleBerry</a>  → pbfm  
 │       └── src    → berry_picker (drag and drop module)
@@ -156,7 +178,8 @@
 │       │        → <a href="https://github.com/ekahPruthvi/capsule_shell" target="_blank" class="linkk">Battery indicator</a>  
 │       │        → <a href="https://github.com/ekahPruthvi/calibrate" target="_blank" class="linkk">Calibrate</a>  
 │       │        → <a href="https://github.com/ekahPruthvi/capsule_shell" target="_blank" class="linkk">capsule shell</a>  
-│       │        → <a href="https://github.com/ekahPruthvi/clipper" target="_blank" class="linkk">Clipper</a>  
+│       │        → <a href="https://github.com/ekahPruthvi/clipper" target="_blank" class="linkk">Clipper</a>
+|       |        → cynagectl (from cynageOS repo)
 │       │        → <a href="https://github.com/ekahPruthvi/octobacillus" target="_blank" class="linkk">Octobacillus</a>  
 │       │        → <a href="https://github.com/ekahPruthvi/octobacillus" target="_blank" class="linkk">Octobacilluscus</a>  
 │       │        → <a href="https://github.com/ekahPruthvi/powerCynide" target="_blank" class="linkk">PowerCynaide</a>  
