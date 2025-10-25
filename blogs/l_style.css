@@ -449,6 +449,10 @@ a{
   font-style: normal;
 }
 
+h2{
+  text-decoration: underline;
+}
+
 mark{
   background-color: #00ff62;
 }
