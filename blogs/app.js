@@ -13,8 +13,8 @@ function expandFolder(i) {
   document.getElementById('folder-content-' + i).classList.add('active');
 }
 
-expandFolder(0);
-currentIndex = 0
+// expandFolder(0);
+// currentIndex = 0
 // pageMove(1.2)
 
 function pageMove(i) {
