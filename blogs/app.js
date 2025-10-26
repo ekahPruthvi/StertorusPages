@@ -42,4 +42,19 @@ document.addEventListener('keydown', function (event) {
     event.preventDefault();
     goBack();
   }
+  if (event.ctrlKey && event.key === '/') {
+    event.preventDefault();
+
+    const legend = document.getElementById('legend');
+
+    if (legend.style.visibility === 'hidden') {
+      legend.style.visibility = 'visible';
+    } else {
+      legend.style.visibility = 'hidden';
+    }
+  }
 });
+
+function bob() {
+  document.getElementById('legend').style.visibility = 'hidden';
+}
