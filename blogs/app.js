@@ -53,8 +53,19 @@ document.addEventListener('keydown', function (event) {
       legend.style.visibility = 'hidden';
     }
   }
+  if (event.key === 'i' || event.key === 'I') {
+    event.preventDefault();
+
+    const legend = document.getElementById('index');
+
+    if (legend.style.visibility === 'hidden') {
+      legend.style.visibility = 'visible';
+    } else {
+      legend.style.visibility = 'hidden';
+    }
+  }
 });
 
-function bob() {
-  document.getElementById('legend').style.visibility = 'hidden';
+function bob(e) {
+  document.getElementById(e).style.visibility = 'hidden';
 }

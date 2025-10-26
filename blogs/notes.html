@@ -29,18 +29,16 @@
 
       <div class="folder-container">
         <div class="folder-tabs">
-          <div class="folder-tab-body cynfolder" onclick="expandFolder(0)"></div>
-          <div class="folder-tab cyntab" onclick="expandFolder(0)">CYNAGE OS</div>
-          <div class="folder-tab-body basfolder" onclick="expandFolder(1)"></div>
-          <div class="folder-tab bastab" onclick="expandFolder(1)">BASIL</div>
-          <div class="folder-tab-body pfolder" onclick="expandFolder(2)"></div>
-          <div class="folder-tab ptab" onclick="expandFolder(2)">PICKLEBERRY</div>
-          <!-- <div class="folder-tab-body" onclick="expandFolder(3)"></div>
-          <div class="folder-tab" onclick="expandFolder(3)">SIGNAL</div>
-          <div class="folder-tab-body" onclick="expandFolder(4)"></div>
-          <div class="folder-tab" onclick="expandFolder(4)">AFTER WORK</div> -->
+          <div class="folder-tab-body cynfolder" onclick="expandFolder(1)"></div>
+          <div class="folder-tab cyntab" onclick="expandFolder(1)">CYNAGE OS</div>
+          <div class="folder-tab-body basfolder" onclick="expandFolder(2)"></div>
+          <div class="folder-tab bastab" onclick="expandFolder(2)">BASIL</div>
+          <div class="folder-tab-body pfolder" onclick="expandFolder(3)"></div>
+          <div class="folder-tab ptab" onclick="expandFolder(3)">PICKLEBERRY</div>
         </div>
+
         <div class="folder-content-container">
+
           <div class="box" id="legend">
             <div class="megamind" id="MEGA">
               <blockquote>
@@ -89,10 +87,21 @@
                   </tbody>
                 </table>
               </div>
-              CLose this dialog box with <a class="linkk" onclick="bob()">ctrl + /</a>
+              Close this dialog box with <a class="linkk" onclick="bob('legend')">ctrl + /</a>
             </div>
           </div>
-          <div class="folder-content" id="folder-content-0">
+
+          <div class="box" id="index" style="visibility: hidden;">
+            <div class="megamind" id="MEGA">
+              <h1>Index</h1>
+              <br>
+              <div class="markdown-scroll">
+                <h2 id="v5-0-1" class="linkk" onclick="expandFolder(1); bob('index')">🧷cynageOS</h2> 
+              </div>
+            </div>
+          </div>
+
+          <div class="folder-content" id="folder-content-1">
             <div class="markdown-scroll">
               <h1 id="cynageos"><a href="https://github.com/ekahPruthvi/cynageOS/tree/main" target="_blank" class="linkk">CynageOS</a></h1>
               <p>
@@ -112,33 +121,38 @@
               </p>
             </div>
           </div>
-          <div class="folder-content" id="folder-content-1">
+
+          <div class="folder-content" id="folder-content-2">
             <div class="markdown-scroll">
               <h2>ARCHIVE LOG</h2>
               <p>Basil documentatin comming</p>
             </div>
           </div>
-          <div class="folder-content" id="folder-content-2">
+
+          <div class="folder-content" id="folder-content-3">
             <div class="markdown-scroll">
               <h2>FALLING</h2>
               <p>PickelBerry documentation commin</p>
             </div>
           </div>
-          <div class="folder-content" id="folder-content-3">
+
+          <div class="folder-content" id="folder-content-4">
             <div class="markdown-scroll">
               <h2>SIGNAL</h2>
               <p>Folder 4 content here.</p>
             </div>
           </div>
-          <div class="folder-content" id="folder-content-4">
+
+          <div class="folder-content" id="folder-content-5">
             <div class="markdown-scroll">
               <h2>AFTER WORK</h2>
               <p>Folder 5 content here.</p>
             </div>
           </div>
+
           <div class="folder-content" id="inner-link-page-1.1">
             <div class="markdown-scroll">
-              <h1 class="linkk" onclick="expandFolder(0)"><mark><< 🧷back</mark></h1>
+              <h1 class="linkk" onclick="expandFolder(1)"><mark><< 🧷back</mark></h1>
               <br>
               <h2 id="installation">Installation</h2><br>
               <h3 id="iso-image-based-installer-recomemded-">ISO - image based installer (recomemded)</h3><br>
@@ -268,17 +282,18 @@
               <p><a id="v5-0-1" class="linkk" onclick="pageMove(1.2)">🧷Documentation</a></p>
             </div>
           </div>
+
           <div class="folder-content" id="inner-link-page-1.2">
             <div class="markdown-scroll">
               <h1>
-                <a class="linkk" onclick="expandFolder(0)"><mark><>🧷Front Page</mark></a> 
+                <a class="linkk" onclick="expandFolder(1)"><mark><>🧷Front Page</mark></a> 
                 <a class="linkk" onclick="pageMove(1.1)"><mark><< 🧷back</mark></a>
               </h1>
             </div>
           </div>
         </div>
-      </div>
 
+      </div>
 
       <div class="footer"> 
         <a class="icons">© 2026 by ekahPruthvi 🞠 </a>
