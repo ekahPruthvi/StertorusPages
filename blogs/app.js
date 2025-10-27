@@ -71,5 +71,6 @@ document.addEventListener('keydown', function (event) {
 });
 
 function bob(e) {
-  document.getElementById(e).style.visibility = 'hidden';
+  document.getElementById('index').style.visibility = 'hidden';
+  document.getElementById('legend').style.visibility = 'hidden';
 }
