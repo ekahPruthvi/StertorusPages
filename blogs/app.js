@@ -46,7 +46,7 @@ document.addEventListener('keydown', function (event) {
     event.preventDefault();
     goBack();
   }
-  if (event.ctrlKey && event.key === '/') {
+  if (event.key === '?') {
     event.preventDefault();
 
     const legend = document.getElementById('legend');
