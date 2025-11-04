@@ -19,7 +19,7 @@ function expandFolder(i) {
 
 // expandFolder(0);
 // currentIndex = 0
-pageMove(1.2)
+// pageMove(1.2)
 
 function pageMove(i) {
   previousIndex = currentIndex;
