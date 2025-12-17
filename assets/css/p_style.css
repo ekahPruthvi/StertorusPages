@@ -1,187 +1,126 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @font-face {
-    font-family: GothicPixels;
-    src:url("../fonts/GothicPixels.ttf") format("woff2"),
-    src:url("../fonts/GothicPixels.ttf") format("embedded-opentype"),
-    src:url("../fonts/GothicPixels.ttf") format("woff"),
-    src:url("../fonts/GothicPixels.ttf") format("svg"),
-    src:url("../fonts/GothicPixels.ttf") format("truetype");
+  font-family: GothicPixels;
+  src: url("../fonts/GothicPixels.ttf") format("truetype");
 }
 @font-face {
   font-family: SpaceMono-Bold;
-    src:url("../fonts/SpaceMono-Bold.ttf") format("woff2"),
-    src:url("../fonts/SpaceMono-Bold.ttf") format("embedded-opentype"),
-    src:url("../fonts/SpaceMono-Bold.ttf") format("woff"),
-    src:url("../fonts/SpaceMono-Bold.ttf") format("svg"),
-    src:url("../fonts/SpaceMono-Bold.ttf") format("truetype");
+  src: url("../fonts/SpaceMono-Bold.ttf") format("truetype");
 }
 
-.bobbm{
-  font-family: "SpaceMono-Bold";
-  font-size: 10vw;
-}
-.bob {
-  position: absolute;
-  top: 63%;
-  left: 50%;
-  border-radius: 50%;
-  height: 96px;
-  width: 96px;
-  animation: rotate_3922 1.2s linear infinite;
-  background-color: #9b59b6;
-}
-
-.bob span {
-  position: absolute;
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  background-color: #9b59b6;
-}
-
-.bob::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-  background-color: #fff;
-  border: solid 5px #ffffff;
-  border-radius: 50%;
-}
-
-@keyframes rotate_3922 {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
+html { cursor: none; }
 
 body {
   background-color: rgb(180, 180, 245);
-  /*background-image: url("../img/mono.png");*/
-  height: 16rem;
+  min-height: 100vh;
   background-image: radial-gradient(circle, rgb(132, 174, 226) 2px, rgb(180, 180, 245) 2px);
   background-size: 2.5rem 2.5rem;
   background-position: center center;
+  font-family: GothicPixels, "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-.menu{
-  padding: 15px;
-  font-family: "GothicPixels";
-  font-size: 3vw;
-  color: rgb(44, 44, 58);
+.headd, .bob {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(99,99,136,0.95);
+  z-index: 10;
+}
 
+.link {
+  font-family: "GothicPixels";
+  font-size: 6.5vw;
+  color: #fff;
+}
+
+.menu, .ui-btn {
+  font-size: 5.5vw;
+  padding: 8px;
+  color: #000;
 }
 
 .heading {
   font-family: "GothicPixels";
-  color: #9c59b600;
+  font-size: 18vw;
+  line-height: 0.95;
+  margin: 18vw 0 4vw;
+  text-align: center;
+  color: rgba(0,0,0,0.85);
+  text-shadow: 2px 2px 5px rgba(86,116,161,0.6);
 }
 
 .para {
   font-family: "SpaceMono-Bold";
-  font-size: 6vw;
-  font-weight: 500;
-  text-shadow: 2px 2px 5px rgb(86, 116, 161);
+  font-size: 7.5vw;
+  font-weight: 600;
   text-align: center;
-  margin-bottom: 10vw;
-  color: rgba(0, 0, 0, 0.144);
+  margin: 0 6vw 10vw;
+  color: rgba(0,0,0,0.35);
+  text-shadow: 1px 1px 4px rgba(86,116,161,0.4);
 }
 
-.link{
-  font-family: "GothicPixels";
-  font-size: 5.5vw;
-  padding: 12px;
-}
-
-a{
- color:rgb(0, 0, 0);
- text-decoration: none; 
- text-align: center;
-}
-
-.boxx{
-  grid-area: boxx;
+.ui-btn {
+  display: inline-block;
+  width: 46%;
+  min-width: 120px;
+  box-sizing: border-box;
   text-align: center;
-  background-color: rgb(99, 99, 136);
-  width: 80% auto;
-  outline-style: solid;
-  border-style: none none solid none;
-  border-width: 10px;
-  padding: 15px;
-  margin: 20px;
-  border-radius: 0px;
-}
-
-
-.imgg{
-  grid-area: footer;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80% auto;
-  border-radius: 50%;
-  margin-bottom: 100px;
-  max-height: 50vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.2;
-}
-
-.main{
-  grid-area: main;
-  background-color: rgb(99, 99, 136);
-  width: 80% auto;
-  outline-style: solid;
-  border-style: none none solid none;
-  border-width: 10px;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 0px;
-
-}
-
-.headd{ 
-  grid-area: header;
-  text-align: center;
-  background-color: rgb(99, 99, 136);
-  width: 100% auto;
-  max-height: 10;
-  outline-style: solid;
-  border-style: none none solid none;
-  border-width: 10px;
-  padding: 15px;
-  border-radius: 2px;
-}
-
-.foot{
-  position: fixed;
-  font-size: 0.9vw;
-  bottom:0;
-  width: 100% auto;
-  text-align: center;
-  margin:10px;
-  padding:20px;
-}
-
-.topgrid {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'boxx main main main main main'
-    'footer footer footer footer footer footer';
-  gap: 0px;
+  border-radius: 8px;
   padding: 10px;
+  background: rgba(255,255,255,0.06);
+  display: none;
 }
 
-.topgrid > div {
-  background-color: rgba(255, 255, 255, 0.8);
+.boxx, .main {
+  margin: 4vw 6vw;
+  padding: 4vw;
+  border-width: 6px;
+  border-style: none none solid none;
+  border-color: rgba(0,0,0,0.08);
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 10px;
+}
+
+.foot {
+  font-size: 3.5vw;
+  margin: 12vw 0 6vw;
+  padding: 12px;
   text-align: center;
+  color: rgba(0,0,0,0.6);
+}
+
+.circle {
+  width: 64px;
+  height: 64px;
+  mix-blend-mode: difference;
+}
+
+.terminal-loader {
+  width: 10.5em;
+  padding: 1.2em 0.8em;
+  font-size: 0.95em;
+}
+
+.imgg {
+  display: block;
+  margin: 0 auto 8vw;
+  width: 60%;
+  max-height: 40vw;
+  opacity: 0.18;
+  border-radius: 50%;
+}
+
+@media (max-width: 360px) {
+  .heading { font-size: 20vw; margin-top: 22vw; }
+  .para { font-size: 8.5vw; }
+  .ui-btn { width: 100%; margin-bottom: 8px; }
 }
