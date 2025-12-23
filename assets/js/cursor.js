@@ -45,6 +45,7 @@ function c() {
 }
 
 const indi = document.getElementById('indi');
+const infosc = document.getElementById('infoforsrvc');
 const title = document.title.toLowerCase();
 let atBottom = 0;
 
@@ -61,6 +62,7 @@ window.addEventListener('scroll', function() {
   if (scrollTop + windowHeight >= documentHeight) {
     console.log('You have reached the bottom of the page!');
     indi.style.visibility = 'visible';
+    infosc.style.visibility = 'hidden';
 
     if (title.includes("projects")) { 
       baseText = "notes ►"; 
