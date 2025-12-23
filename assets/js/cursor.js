@@ -49,29 +49,50 @@ const title = document.title.toLowerCase();
 let atBottom = 0;
 
 
+let countdownTimer = null;
+let countdownValue = 0;
+let baseText = "";
+
 window.addEventListener('scroll', function() {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    
-    const windowHeight = window.innerHeight;
-    
-    const documentHeight = document.documentElement.scrollHeight;
-    
-    if (scrollTop + windowHeight >= documentHeight) {
-      console.log('You have reached the bottom of the page!');
-      indi.style.visibility = 'visible';
-      if (title.includes("projects")) { 
-        indi.textContent = "scroll notes ►"; 
-      } else if (title.includes("ekah")) {
-        indi.textContent = "scroll projects ►"; 
-      } else if (title.includes("notes")) {
-        indi.textContent = "scroll about me ►"; 
-      } else { 
-        indi.textContent = "scroll home ►"; 
-      }
-      this.setTimeout(() => {
-        indi.click();
-      }, 2000);
-    } else {
-      indi.style.visibility = 'hidden';
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.documentElement.scrollHeight;
+
+  if (scrollTop + windowHeight >= documentHeight) {
+    console.log('You have reached the bottom of the page!');
+    indi.style.visibility = 'visible';
+
+    if (title.includes("projects")) { 
+      baseText = "notes ►"; 
+    } else if (title.includes("ekah")) {
+      baseText = "projects ►"; 
+    } else if (title.includes("notes")) {
+      baseText = "about me ►"; 
+    } else { 
+      baseText = "home ►"; 
     }
+
+    if (!countdownTimer) {
+      countdownValue = 3;
+      indi.textContent = `${baseText} in ${countdownValue}`;
+
+      countdownTimer = setInterval(() => {
+        countdownValue--;
+        if (countdownValue > 0) {
+          indi.textContent = `${baseText} in ${countdownValue}`;
+        } else {
+          clearInterval(countdownTimer);
+          countdownTimer = null;
+          indi.click(); 
+        }
+      }, 1000); 
+    }
+
+  } else {
+    indi.style.visibility = 'hidden';
+    if (countdownTimer) {
+      clearInterval(countdownTimer);
+      countdownTimer = null;
+    }
+  }
 });
