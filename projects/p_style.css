@@ -129,7 +129,7 @@ body {
   background-position: center center;
 }
 
-.menu{
+.menu, .ui-btn{
   padding: 15px;
   font-family: "GothicPixels";
   font-size: 1.5vw;

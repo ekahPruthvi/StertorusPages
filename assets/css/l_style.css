@@ -38,7 +38,11 @@
 
 .scrollind {
   display: none;
-} 
+}
+
+.infoscr {
+  display: none;
+}
 
 .terminal-loader {
   border: 0.1em solid #333;

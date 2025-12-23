@@ -34,6 +34,17 @@ body {
   padding: 8px;
   margin: 10px;
   border-radius: 2px;
+  top: 10px;
+  position: absolute;
+}
+
+.infoscr {
+  text-align: center;
+  position: relative;
+  top: 10vh;
+  width: 100%; 
+  font-family: SpaceMono-Bold;
+  font-weight: 200;
 }
 
 .scrollind {
@@ -53,6 +64,7 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   border: #000 2px solid;
   visibility: hidden;
+  text-decoration: none;
 }
 
 .link {
@@ -72,7 +84,7 @@ body {
   font-family: "GothicPixels";
   font-size: 18vw;
   line-height: 0.95;
-  margin: 18vw 0 4vw;
+  margin: 30vh 0 4vw;
   text-align: center;
   color: rgba(0,0,0,0.85);
   text-shadow: 2px 2px 5px rgba(86,116,161,0.6);
