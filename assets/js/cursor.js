@@ -45,6 +45,8 @@ function c() {
 }
 
 const indi = document.getElementById('indi');
+const title = document.title.toLowerCase(); 
+
 
 window.addEventListener('scroll', function() {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -56,7 +58,15 @@ window.addEventListener('scroll', function() {
     if (scrollTop + windowHeight >= documentHeight) {
       console.log('You have reached the bottom of the page!');
       indi.style.visibility = 'visible';
-      indi.textContent = 'goto to projects ►';
+      if (title.includes("projects")) { 
+        indi.textContent = "goto notes ►"; 
+      } else if (title.includes("ekah")) {
+        indi.textContent = "goto projects ►"; 
+      } else if (title.includes("notes")) {
+        indi.textContent = "goto about me ►"; 
+      } else { 
+        indi.textContent = "goto home ►"; 
+      }
     } else {
       indi.style.visibility = 'hidden';
     }
