@@ -22,18 +22,37 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.headd, .bob {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 12px 10px;
+.headd, .bob { 
+  text-align: start;
+  background-color: rgb(36, 36, 48);
   display: flex;
-  gap: 8px;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgba(99,99,136,0.95);
-  z-index: 10;
+  width: 95% auto;
+  max-height: 10;
+  outline-style: solid;
+  border-style: none none solid none;
+  border-width: 10px;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 2px;
+}
+
+.scrollind {
+  width: auto;          
+  height: 10vw;
+  border-radius: 2px;       
+  background-color: #5e4caf; 
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  color: white;
+  align-self: center;
+  margin-top: 30%;
+  font-size: 1em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border: #000 2px solid;
+  visibility: hidden;
 }
 
 .link {
@@ -46,6 +65,7 @@ body {
   font-size: 5.5vw;
   padding: 8px;
   color: #000;
+  display: none;
 }
 
 .heading {

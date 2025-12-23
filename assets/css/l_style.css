@@ -2,19 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @font-face {
     font-family: GothicPixels;
-    src:url("../fonts/GothicPixels.ttf") format("woff2"),
-    src:url("../fonts/GothicPixels.ttf") format("embedded-opentype"),
-    src:url("../fonts/GothicPixels.ttf") format("woff"),
-    src:url("../fonts/GothicPixels.ttf") format("svg"),
-    src:url("../fonts/GothicPixels.ttf") format("truetype");
+    src:url("../fonts/GothicPixels.ttf") format("woff2");
 }
 @font-face {
   font-family: SpaceMono-Bold;
-    src:url("../fonts/SpaceMono-Bold.ttf") format("woff2"),
-    src:url("../fonts/SpaceMono-Bold.ttf") format("embedded-opentype"),
-    src:url("../fonts/SpaceMono-Bold.ttf") format("woff"),
-    src:url("../fonts/SpaceMono-Bold.ttf") format("svg"),
-    src:url("../fonts/SpaceMono-Bold.ttf") format("truetype");
+    src:url("../fonts/SpaceMono-Bold.ttf") format("woff2");
 }
 
 .bobbm {
@@ -37,12 +29,16 @@
   45%,
   55% {
     width: 6.2em;
-  } /* adjust width based on content */
+  }
   90%,
   100% {
     width: 0;
   }
 }
+
+.scrollind {
+  display: none;
+} 
 
 .terminal-loader {
   border: 0.1em solid #333;

@@ -43,3 +43,21 @@ function c() {
     console.log("This flower belongs to C. If found please return to the owner");
   }
 }
+
+const indi = document.getElementById('indi');
+
+window.addEventListener('scroll', function() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    
+    const windowHeight = window.innerHeight;
+    
+    const documentHeight = document.documentElement.scrollHeight;
+    
+    if (scrollTop + windowHeight >= documentHeight) {
+      console.log('You have reached the bottom of the page!');
+      indi.style.visibility = 'visible';
+      indi.textContent = 'goto to projects ►';
+    } else {
+      indi.style.visibility = 'hidden';
+    }
+});
