@@ -62,11 +62,11 @@ window.addEventListener('scroll', function() {
   if (scrollTop + windowHeight >= documentHeight) {
     console.log('You have reached the bottom of the page!');
     indi.style.visibility = 'visible';
-    infosc.style.visibility = 'hidden';
 
     if (title.includes("projects")) { 
-      baseText = "notes ►"; 
+      baseText = "notes ►";
     } else if (title.includes("ekah")) {
+      infosc.style.visibility = 'hidden';
       baseText = "projects ►"; 
     } else if (title.includes("notes")) {
       baseText = "about me ►"; 
